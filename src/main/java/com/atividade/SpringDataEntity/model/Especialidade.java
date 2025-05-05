@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 public class Especialidade {
     @Id
     @Column(name = "Id", nullable = false)
-    private int id;
+    private Long id;
     @Column(name = "Nome", nullable = false)
     private String nome;
 }

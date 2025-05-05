@@ -15,20 +15,16 @@ import lombok.NoArgsConstructor;
 @Table(name = "paciente")
 public class Paciente {
     @Id
-    @Column(name = "id", nullable = false)
-    private int id;
+    @Column(name = "NumBenef", nullable = false)
+    private Long numBenef;
     @Column(name = "Nome", nullable = false)
     private String nome;
     @Column(name = "Rua", nullable = false)
     private String rua;
-    @Column(name = "Numero", nullable = false)
-    private int numero;
     @Column(name = "Cep", nullable = false)
-    private int cep;
-    @Column(name = "Complemento", nullable = false)
+    private String cep;
+    @Column(name = "Complemento", nullable = true)
     private String complemento;
     @Column(name = "Telefone", nullable = false)
-    private int telefone;
-    @Column(name = "NumBenef", nullable = false)
-    private int numBenef;
+    private String telefone;
 }
